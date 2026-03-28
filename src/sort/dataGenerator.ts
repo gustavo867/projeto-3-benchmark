@@ -4,5 +4,8 @@ export function bestCase(n: number) {
 export function worstCase(n: number) {
   return Array.from({ length: n }, (_, i) => n - i);
 }
+export function averageCase(n: number) {
+  return Array.from({ length: n }, () => Math.floor(Math.random() * n));
+}
 
 
